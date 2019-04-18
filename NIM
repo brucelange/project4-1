@@ -51,14 +51,24 @@ def computerDumbMode(ballCount):
 def computerSmartMode(ballCount):
     if ballCount > 63:
         value = ballCount - 63
+    if ballCount == 63:
+        value = 32
     if 31 < ballCount < 63:
         value = ballCount - 31
+    if ballCount == 31:
+        value = 16
     if 15 < ballCount < 31:
         value = ballCount - 15
+    if ballCount == 15:
+        value = 8
     if 7 < ballCount < 15:
         value = ballCount - 7
+    if ballCount == 7:
+        value = 4
     if 3 < ballCount < 7:
         value = ballCount - 3
+    if ballCount == 3:
+        value = 2
     if 1 < ballCount < 3:
         value = 1
 
